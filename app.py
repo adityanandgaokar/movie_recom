@@ -5,6 +5,7 @@ Created on Fri Jun 11 18:03:29 2021
 @author: Aditya
 """
 
+
 from flask import Flask, flash, request, redirect, url_for, render_template
 from prediction import recom
 
