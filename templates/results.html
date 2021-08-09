@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style1.css') }}"/>
+        <title>Recomendations based on {{ query }} </title>
+
+    </head>
+    <body>
+    
+        
+        <div class="page">
+        <div class="archive">
+        {% for movie in movies %}
+        <div class="article"><p>{{ movie }} </p></div>
+        {% endfor %}
+		</div>
+		</div>
+		
+    </body>
+</html>

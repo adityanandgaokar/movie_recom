@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+        <title>Movie search</title>
+    </head>
+    <body>
+    
+       <div class="background-image">
+        <div class="search-box">
+        
+  <form action="/search_movie" method="post">
+ 
+  <input class="search-txt" type="text" id="query" name="query"><br><br>
+  <input class="search-btn" type="submit" value="Submit">
+</form>
+
+    
+    </div>
+    </div>
+    </body>
+</html>
