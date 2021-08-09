@@ -13,13 +13,9 @@ from flask import Flask, flash, request, redirect, url_for, render_template
 app= Flask(__name__, template_folder='templates')
 
 
-#@app.route('/', methods=['GET'])
-#def home():
-#    return render_template('index.html')
-
 @app.route('/', methods=['GET'])
 def home():
-    return "success"
+    return render_template('index.html')
 
 
 #@app.route('/search_movie', methods=['GET', 'POST'])
