@@ -6,7 +6,7 @@ Created on Fri Jun 11 18:03:29 2021
 """
 
 from flask import Flask, flash, request, redirect, url_for, render_template
-#from prediction import recom
+from prediction import recom
 
 
 
@@ -18,16 +18,16 @@ def home():
     return render_template('index.html')
 
 
-#@app.route('/search_movie', methods=['GET', 'POST'])
-#def search_movie():
-#    if request.method == 'POST':
-#        movies = recom(request.form.get("query"))
-#        
-#        return render_template('results.html', query=request.form.get("query"), movies=movies)
-#            
-#
-#    elif request.method == 'GET':
-#        return render_template('index.html')
+@app.route('/search_movie', methods=['GET', 'POST'])
+def search_movie():
+    if request.method == 'POST':
+        movies = recom(request.form.get("query"))
+        
+        return render_template('results.html', query=request.form.get("query"), movies=movies)
+            
+
+    elif request.method == 'GET':
+        return render_template('index.html')
 
 
 
